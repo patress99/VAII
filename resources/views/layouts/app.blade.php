@@ -56,14 +56,12 @@
                 @endauth
             </li>
             <li class="nav-item">
-                <a href="?c=home&a=contact" class="nav-link m-2 menu-item">Kontaktujte nás</a>
+                <a  href="{{ url("/contact") }}"class="nav-link m-2 menu-item">Kontaktujte nás</a>
             </li>
             <li class="nav-item">
-                <a href="{{ url("/gallery") }}" class="nav-link m-2 menu-item">Gallery</a>
+                <a href="{{ url("/gallery") }}" class="nav-link m-2 menu-item">Galéria</a>
             </li>
-            <li class="nav-item">
-                <a href="?c=pricelist" class="nav-link m-2 menu-item">Cenník</a>
-            </li>
+
 
             <!-- Authentication Links -->
             @guest

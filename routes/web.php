@@ -22,6 +22,10 @@ Route::get('/gallery', function () {
     return view('gallery');
 });
 
+Route::get('/contact', function () {
+    return view('contact');
+});
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
