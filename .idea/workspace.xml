@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="964a6540-0e87-4909-a793-d635324b27ad" name="Default Changelist" comment="initial commit" />
+    <list default="true" id="964a6540-0e87-4909-a793-d635324b27ad" name="Default Changelist" comment="initial commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -157,6 +161,9 @@
     </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\Paťo\AppData\Roaming\Subversion</configuration>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="964a6540-0e87-4909-a793-d635324b27ad" name="Default Changelist" comment="" />
@@ -164,7 +171,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1610731581246</updated>
-      <workItem from="1610731582344" duration="2853000" />
+      <workItem from="1610731582344" duration="3453000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1610734424550</created>
@@ -173,7 +180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610734424550</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="initial commit">
+      <created>1610734502615</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1610734502615</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,18 +206,18 @@
       <screen x="-1920" y="-13" width="1920" height="1040" />
     </state>
     <state x="-1186" y="308" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/-1920.-13.1920.1040@-1920.-13.1920.1040" timestamp="1610732848376" />
-    <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1610734337088">
+    <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1610734485286">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040/-1920.-13.1920.1040@0.0.1920.1040" timestamp="1610734337088" />
+    <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040/-1920.-13.1920.1040@0.0.1920.1040" timestamp="1610734485286" />
     <state width="271" height="457" key="HiddenNamespacesPopup" timestamp="1610731814375">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="271" height="457" key="HiddenNamespacesPopup/0.0.1920.1040/-1920.-13.1920.1040@0.0.1920.1040" timestamp="1610731814375" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1610734436459">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1610734513511">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.-13.1920.1040@0.0.1920.1040" timestamp="1610734436459" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.-13.1920.1040@0.0.1920.1040" timestamp="1610734513511" />
     <state x="859" y="396" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1610731881531">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -212,5 +226,13 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="842" y="407" width="316" height="245" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1920.1040/-1920.-13.1920.1040@0.0.1920.1040" timestamp="1610731872740" />
+    <state x="790" y="310" key="svn.repositoryBrowser" timestamp="1610734491373">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="790" y="310" key="svn.repositoryBrowser/0.0.1920.1040/-1920.-13.1920.1040@0.0.1920.1040" timestamp="1610734491373" />
+    <state x="787" y="293" key="svn4idea.import.options" timestamp="1610734486824">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="787" y="293" key="svn4idea.import.options/0.0.1920.1040/-1920.-13.1920.1040@0.0.1920.1040" timestamp="1610734486824" />
   </component>
 </project>

@@ -44,15 +44,17 @@
 
     </div>
 
-    @auth
-        <a class="nav-link" href="{{ route('user.index') }}"> {{ __('Users') }}</a>
-@endauth
 
 
 
 <!-- Right Side Of Navbar -->
     <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
         <ul class="navbar-nav ml-auto flex-nowrap">
+            <li class="nav-item">
+                @auth
+                    <a class="nav-link m-2 menu-item" href="{{ route('user.index') }}"> {{ __('Users') }}</a>
+                @endauth
+            </li>
             <li class="nav-item">
                 <a href="?c=home&a=contact" class="nav-link m-2 menu-item">Kontaktujte nás</a>
             </li>
@@ -82,7 +84,7 @@
                 @endif
             @else
                 <li class="nav-item dropdown">
-                    <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                    <a id="navbarDropdown" class="nav-link m-2 menu-item" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                         {{ Auth::user()->name }}
                     </a>
 
