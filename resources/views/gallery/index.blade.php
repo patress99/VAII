@@ -26,8 +26,12 @@
                     <?php } ?>
                     <div class="card-body">
                         <p class="card-title"><?=$picture['text']?></p>
-                        <a href="{{ route('gallery.edit', $picture['id']) }}" class="btn btn-primary btn-sm" id="right-panel-link">Editovať</a>
-                        <a href="{{ route('gallery.delete', $picture['id']) }}" class="btn btn-danger btn-sm" id="left-panel-link">Zmazať</a>
+                        @auth
+                            @if (Auth::user()->name == 'admin')
+                                <a href="{{ route('gallery.edit', $picture['id']) }}" class="btn btn-primary btn-sm" id="right-panel-link">Editovať</a>
+                                <a href="{{ route('gallery.delete', $picture['id']) }}" class="btn btn-danger btn-sm" id="left-panel-link">Zmazať</a>
+                            @endif
+                        @endauth
                     </div>
                 </div>
             </div>

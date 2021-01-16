@@ -52,7 +52,9 @@
         <ul class="navbar-nav ml-auto flex-nowrap">
             <li class="nav-item">
                 @auth
-                    <a class="nav-link m-2 menu-item" href="{{ route('user.index') }}"> {{ __('Users') }}</a>
+                    @if (Auth::user()->name == 'admin')
+                        <a class="nav-link m-2 menu-item" href="{{ route('user.index') }}"> {{ __('Users') }}</a>
+                    @endif
                 @endauth
             </li>
             <li class="nav-item">
@@ -91,6 +93,7 @@
                            onclick="event.preventDefault();
                                          document.getElementById('logout-form').submit();">
                             {{ __('Logout') }}
+
                         </a>
 
                         <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
