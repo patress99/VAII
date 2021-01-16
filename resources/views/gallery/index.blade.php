@@ -18,10 +18,10 @@
 
             <div class="column">
                 <div class="card" style="width: 30rem; height: 35rem;">
-
+                    <h5 class="card-title"><?=$picture['title']?></h5>
                     <?php if($picture['filename'] != null)  {  ?>
                     <div class="pricelist">
-                        <img src='<?php echo $target_file; ?>' class="card-img-top" alt="...">
+                        <img src="{{ asset('storage/images/' . $picture['filename']) }}" class="card-img-top" alt="...">
                     </div>
                     <?php } ?>
                     <div class="card-body">

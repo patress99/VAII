@@ -19,19 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="964a6540-0e87-4909-a793-d635324b27ad" name="Default Changelist" comment="pridanie novych features">
-      <change afterPath="$PROJECT_DIR$/app/Models/Image.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/gallery/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/gallery/form.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/gallery/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2c42dcee-d62c-40ad-ae06-0cb9d7fa8883.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2c42dcee-d62c-40ad-ae06-0cb9d7fa8883.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+    <list default="true" id="964a6540-0e87-4909-a793-d635324b27ad" name="Default Changelist" comment="pridanie tabulky images">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/gallery.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/gallery/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/gallery/form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/gallery/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/gallery/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -202,7 +193,7 @@
       <option name="presentableId" value="Default" />
       <updated>1610731581246</updated>
       <workItem from="1610731582344" duration="5143000" />
-      <workItem from="1610789842590" duration="17313000" />
+      <workItem from="1610789842590" duration="20454000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1610734424550</created>
@@ -232,7 +223,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610736718359</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="pridanie tabulky images">
+      <created>1610815933378</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1610815933378</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -253,7 +251,8 @@
     <MESSAGE value="initial commit" />
     <MESSAGE value="uprava menu" />
     <MESSAGE value="pridanie novych features" />
-    <option name="LAST_COMMIT_MESSAGE" value="pridanie novych features" />
+    <MESSAGE value="pridanie tabulky images" />
+    <option name="LAST_COMMIT_MESSAGE" value="pridanie tabulky images" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1610731680130">
@@ -284,10 +283,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="619" y="242" key="NewPhpClassDialog/0.0.1920.1040/-1920.-13.1920.1040@0.0.1920.1040" timestamp="1610790857858" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1610736720216">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1610815936983">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.-13.1920.1040@0.0.1920.1040" timestamp="1610736720216" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.-13.1920.1040@0.0.1920.1040" timestamp="1610815936983" />
     <state x="-1061" y="383" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1610792333953">
       <screen x="-1920" y="-13" width="1920" height="1040" />
     </state>

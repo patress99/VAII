@@ -15,13 +15,11 @@
                 </div>
 
 
+
                 <div id="content">
 
                     <form method="POST" enctype="multipart/form-data">
-                        <div class="form-group">
-                            <label>Filename</label>
-                            <textarea name="filename" class="form-control" required></textarea>
-                        </div>
+                        <input type="file" name="filename" required>
                         <div>
                             <button type="submit" name="upload"> UPLOAD  </button>
 
