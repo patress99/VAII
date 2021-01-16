@@ -14,6 +14,7 @@ class GalleryController extends Controller
     public function index()
     {
         $item = Image::all()->toArray();
+
         return view('gallery.index', compact('item'));
     }
 
@@ -67,11 +68,16 @@ class GalleryController extends Controller
      * Show the form for editing the specified resource.
      *
      * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response
      */
     public function edit($id)
     {
-        //
+        $image = Image::find($id);
+        return view('gallery.edit', [
+            'action' => route('gallery.update', $image->id),
+            'method' => 'put',
+            'model' => $image
+        ]);
     }
 
     /**
@@ -83,7 +89,21 @@ class GalleryController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $image = Image::find($id);
+
+        if ($image->filename != '') {
+            $path = public_path().'/storage/images';
+
+            //upload new file
+            $file = $request->filename;
+            $filenameReal = $file->getClientOriginalName();
+            $file->move($path, $filenameReal);
+
+            //for update in table
+            $image->update(['filename' => $filenameReal, 'title' =>  $request->get('title'), 'text' =>  $request->get('text')]);
+
+        }
+        return redirect()->route('gallery.index');
     }
 
     /**
@@ -94,6 +114,8 @@ class GalleryController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $image = Image::find($id);
+        $image->delete();
+        return redirect()->route('gallery.index');
     }
 }

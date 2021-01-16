@@ -28,7 +28,8 @@ Route::get('/contact', function () {
 });
 
 Route::resource('gallery', \App\Http\Controllers\GalleryController::class);
-
+Route::get('gallery/{id}/delete', ['uses' => '\App\Http\Controllers\GalleryController@destroy', 'as' => 'gallery.delete']);
+Route::get('gallery/{id}/edit', ['uses' => '\App\Http\Controllers\GalleryController@edit', 'as' => 'gallery.edit']);
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

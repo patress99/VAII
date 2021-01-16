@@ -7,11 +7,11 @@
                 @method($method)
                 <div class="form-group">
                     <label>Názov</label>
-                    <input name="title" type="text" class="form-control" required pattern="^[A-Z].*$">
+                    <input name="title" type="text" class="form-control" required pattern="^[A-Z].*$" value="{{ old('title', @$model->title) }}">
                 </div>
                 <div class="form-group">
                     <label>Text</label>
-                    <textarea name="text" class="form-control" required></textarea>
+                    <textarea name="text" class="form-control" required>{{ old('text', @$model->text) }}</textarea>
                 </div>
 
 

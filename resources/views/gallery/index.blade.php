@@ -26,8 +26,8 @@
                     <?php } ?>
                     <div class="card-body">
                         <p class="card-title"><?=$picture['text']?></p>
-                        <a href="?c=pricelist&a=edit&id=<?=$picture['id']?>" class="btn btn-primary btn-sm" id="right-panel-link">Editovať</a>
-                        <a href="?c=pricelist&a=delete&id=<?=$picture['id']?>" class="btn btn-danger btn-sm" id="left-panel-link">Zmazať</a>
+                        <a href="{{ route('gallery.edit', $picture['id']) }}" class="btn btn-primary btn-sm" id="right-panel-link">Editovať</a>
+                        <a href="{{ route('gallery.delete', $picture['id']) }}" class="btn btn-danger btn-sm" id="left-panel-link">Zmazať</a>
                     </div>
                 </div>
             </div>
