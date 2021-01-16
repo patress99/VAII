@@ -1,11 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="964a6540-0e87-4909-a793-d635324b27ad" name="Default Changelist" comment="uprava menu">
-      <change afterPath="$PROJECT_DIR$/resources/views/contact.blade.php" afterDir="false" />
+    <list default="true" id="964a6540-0e87-4909-a793-d635324b27ad" name="Default Changelist" comment="pridanie novych features">
+      <change afterPath="$PROJECT_DIR$/app/Models/Image.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/gallery/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/gallery/form.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/gallery/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2c42dcee-d62c-40ad-ae06-0cb9d7fa8883.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2c42dcee-d62c-40ad-ae06-0cb9d7fa8883.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/gallery.blade.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -13,12 +38,13 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -143,17 +169,19 @@
     <property name="DatabaseDriversLRU" value="mariadb" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/tests" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\skola\vysoka\3rocnik\vaii\php_mysql\www\semestralnaPracaVAII\public" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\skola\vysoka\3rocnik\vaii\php_mysql\www\semestralnaPracaVAII\resources\views\gallery" />
       <recent name="F:\skola\vysoka\3rocnik\vaii\php_mysql\www\semestralnaPracaVAII\app\Http\Controllers" />
       <recent name="F:\skola\vysoka\3rocnik\vaii\php_mysql\www\semestralnaPracaVAII\app\Http\Controllers\Auth" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\skola\vysoka\3rocnik\vaii\php_mysql\www\semestralnaPracaVAII\tests" />
+      <recent name="F:\skola\vysoka\3rocnik\vaii\php_mysql\www\semestralnaPracaVAII\public" />
     </key>
   </component>
   <component name="RunManager">
@@ -173,7 +201,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1610731581246</updated>
-      <workItem from="1610731582344" duration="5086000" />
+      <workItem from="1610731582344" duration="5143000" />
+      <workItem from="1610789842590" duration="17313000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1610734424550</created>
@@ -196,16 +225,35 @@
       <option name="project" value="LOCAL" />
       <updated>1610735160726</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="pridanie novych features">
+      <created>1610736718359</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1610736718359</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
     <MESSAGE value="uprava menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="uprava menu" />
+    <MESSAGE value="pridanie novych features" />
+    <option name="LAST_COMMIT_MESSAGE" value="pridanie novych features" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1610731680130">
@@ -216,6 +264,14 @@
       <screen x="-1920" y="-13" width="1920" height="1040" />
     </state>
     <state x="-1186" y="308" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/-1920.-13.1920.1040@-1920.-13.1920.1040" timestamp="1610732848376" />
+    <state x="626" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1610803419399">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="626" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/-1920.-13.1920.1040@0.0.1920.1040" timestamp="1610803419399" />
+    <state x="690" y="274" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1610815465482">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="274" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/-1920.-13.1920.1040@0.0.1920.1040" timestamp="1610815465482" />
     <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1610734485286">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -224,18 +280,36 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="271" height="457" key="HiddenNamespacesPopup/0.0.1920.1040/-1920.-13.1920.1040@0.0.1920.1040" timestamp="1610731814375" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1610735165906">
+    <state x="619" y="242" key="NewPhpClassDialog" timestamp="1610790857858">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.-13.1920.1040@0.0.1920.1040" timestamp="1610735165906" />
-    <state x="859" y="396" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1610731881531">
+    <state x="619" y="242" key="NewPhpClassDialog/0.0.1920.1040/-1920.-13.1920.1040@0.0.1920.1040" timestamp="1610790857858" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1610736720216">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="859" y="396" key="com.intellij.database.actions.DdlActions$CreateObject$1/0.0.1920.1040/-1920.-13.1920.1040@0.0.1920.1040" timestamp="1610731881531" />
-    <state x="842" y="407" width="316" height="245" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1610731872740">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.-13.1920.1040@0.0.1920.1040" timestamp="1610736720216" />
+    <state x="-1061" y="383" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1610792333953">
+      <screen x="-1920" y="-13" width="1920" height="1040" />
+    </state>
+    <state x="-1061" y="383" key="com.intellij.database.actions.DdlActions$CreateObject$1/0.0.1920.1040/-1920.-13.1920.1040@-1920.-13.1920.1040" timestamp="1610792333953" />
+    <state x="859" y="396" key="com.intellij.database.actions.DdlActions$CreateObject$1/0.0.1920.1040/-1920.-13.1920.1040@0.0.1920.1040" timestamp="1610790070037" />
+    <state x="842" y="407" width="316" height="245" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1610799768169">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="842" y="407" width="316" height="245" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1920.1040/-1920.-13.1920.1040@0.0.1920.1040" timestamp="1610731872740" />
+    <state x="-1078" y="394" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1920.1040/-1920.-13.1920.1040@-1920.-13.1920.1040" timestamp="1610792736361" />
+    <state x="842" y="407" width="316" height="245" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1920.1040/-1920.-13.1920.1040@0.0.1920.1040" timestamp="1610799768169" />
+    <state x="818" y="257" width="557" height="525" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1610814307631">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="818" y="257" width="557" height="525" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1040/-1920.-13.1920.1040@0.0.1920.1040" timestamp="1610814307631" />
+    <state x="777" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1610815885371">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="777" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/-1920.-13.1920.1040@0.0.1920.1040" timestamp="1610815885371" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1610790530533">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.-13.1920.1040@0.0.1920.1040" timestamp="1610790530533" />
     <state x="790" y="310" key="svn.repositoryBrowser" timestamp="1610734491373">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

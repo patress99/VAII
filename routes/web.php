@@ -14,17 +14,20 @@ use App\Http\Controllers\UserController;
 |
 */
 
+
 Route::get('/', function () {
     return view('welcome');
 });
 
 Route::get('/gallery', function () {
-    return view('gallery');
+    return view('gallery.index');
 });
 
 Route::get('/contact', function () {
     return view('contact');
 });
+
+Route::resource('gallery', \App\Http\Controllers\GalleryController::class);
 
 Auth::routes();
 
