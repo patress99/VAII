@@ -51,9 +51,12 @@
 
 
     </div>
-
-    <div class="horizontally-center">
-        <a href="{{ route('gallery.create') }}"><button>Pridať položku</button></a>
-    </div>
+    @auth
+        @if (Auth::user()->name == 'admin')
+            <div class="horizontally-center">
+                <a href="{{ route('gallery.create') }}"><button>Pridať položku</button></a>
+            </div>
+        @endif
+    @endauth
 
 @endsection

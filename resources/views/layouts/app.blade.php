@@ -36,11 +36,22 @@
             </a>
         </nav>
 
+        @auth
+            <a class="nav-link m-2 menu-item" href="{{ route('settings', Auth::user()->id) }}"> {{ __('Settings') }}</a>
+        @endauth
+        @auth
+            @if (Auth::user()->name == 'admin')
+                <a class="nav-link m-2 menu-item" href="{{ route('user.index') }}"> {{ __('Users') }}</a>
+            @endif
+        @endauth
+
         <div class="w-100 text-right">
             <button class="navbar-toggler navbar-dark bg-dark" type="button" data-toggle="collapse" data-target="#myNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
         </div>
+
+
 
     </div>
 
@@ -51,11 +62,7 @@
     <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
         <ul class="navbar-nav ml-auto flex-nowrap">
             <li class="nav-item">
-                @auth
-                    @if (Auth::user()->name == 'admin')
-                        <a class="nav-link m-2 menu-item" href="{{ route('user.index') }}"> {{ __('Users') }}</a>
-                    @endif
-                @endauth
+
             </li>
             <li class="nav-item">
                 <a  href="{{ url("/contact") }}"class="nav-link m-2 menu-item">Kontaktujte nás</a>
@@ -99,7 +106,10 @@
                         <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                             @csrf
                         </form>
+
                     </div>
+
+
                 </li>
             @endguest
 

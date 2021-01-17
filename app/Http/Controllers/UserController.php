@@ -107,7 +107,7 @@ class UserController extends Controller
 
 
         $user->update($request->all());
-        return redirect()->route('user.index');
+        return redirect()->route('home');
 
     }
 
@@ -115,11 +115,22 @@ class UserController extends Controller
      * Remove the specified resource from storage.
      *
      * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\RedirectResponse
      */
     public function destroy(User $user)
     {
         $user->delete();
         return redirect()->route('user.index');
+    }
+
+    public function setting($id)
+    {
+        $user = User::find($id);
+        $user->password = '';
+        return view('user.edit', [
+            'action' => route('user.update', $user->id),
+            'method' => 'put',
+            'model' => $user
+        ]);
     }
 }

@@ -19,11 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="964a6540-0e87-4909-a793-d635324b27ad" name="Default Changelist" comment="editovanie,mazanie obrazkov v galerii">
+    <list default="true" id="964a6540-0e87-4909-a793-d635324b27ad" name="Default Changelist" comment="upravenie policies, admin ma pristup k uprave">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/gallery/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/gallery/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Policies/UserPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/UserPolicy.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/gallery/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/gallery/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,7 +163,7 @@
     <property name="DatabaseDriversLRU" value="mariadb" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/tests" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -194,7 +196,8 @@
       <option name="presentableId" value="Default" />
       <updated>1610731581246</updated>
       <workItem from="1610731582344" duration="5143000" />
-      <workItem from="1610789842590" duration="27516000" />
+      <workItem from="1610789842590" duration="28217000" />
+      <workItem from="1610875110995" duration="4036000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1610734424550</created>
@@ -245,7 +248,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610824594049</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="upravenie policies, admin ma pristup k uprave">
+      <created>1610826415379</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1610826415379</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -261,6 +271,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
@@ -269,7 +280,8 @@
     <MESSAGE value="pridanie tabulky images" />
     <MESSAGE value="funkcne pridavanie obrazkov do databazy" />
     <MESSAGE value="editovanie,mazanie obrazkov v galerii" />
-    <option name="LAST_COMMIT_MESSAGE" value="editovanie,mazanie obrazkov v galerii" />
+    <MESSAGE value="upravenie policies, admin ma pristup k uprave" />
+    <option name="LAST_COMMIT_MESSAGE" value="upravenie policies, admin ma pristup k uprave" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1610731680130">
@@ -284,10 +296,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="626" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/-1920.-13.1920.1040@0.0.1920.1040" timestamp="1610803419399" />
-    <state x="690" y="274" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1610815465482">
+    <state x="690" y="274" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1610877020291">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="274" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/-1920.-13.1920.1040@0.0.1920.1040" timestamp="1610815465482" />
+    <state x="690" y="274" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/-1920.-13.1920.1040@0.0.1920.1040" timestamp="1610877020291" />
     <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1610734485286">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
