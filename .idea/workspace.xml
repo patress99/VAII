@@ -19,13 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="964a6540-0e87-4909-a793-d635324b27ad" name="Default Changelist" comment="upravenie policies, admin ma pristup k uprave">
+    <list default="true" id="964a6540-0e87-4909-a793-d635324b27ad" name="Default Changelist" comment="uzivatelom pridane nastavenia">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Policies/UserPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/UserPolicy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/gallery/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/gallery/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/contact/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/contact/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/user/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/user/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/form.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,14 +167,15 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\skola\vysoka\3rocnik\vaii\php_mysql\www\semestralnaPracaVAII\resources\views\gallery" />
-      <recent name="F:\skola\vysoka\3rocnik\vaii\php_mysql\www\semestralnaPracaVAII\app\Http\Controllers" />
-      <recent name="F:\skola\vysoka\3rocnik\vaii\php_mysql\www\semestralnaPracaVAII\app\Http\Controllers\Auth" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\skola\vysoka\3rocnik\vaii\php_mysql\www\semestralnaPracaVAII\tests" />
       <recent name="F:\skola\vysoka\3rocnik\vaii\php_mysql\www\semestralnaPracaVAII\public" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\skola\vysoka\3rocnik\vaii\php_mysql\www\semestralnaPracaVAII\resources\views\contact" />
+      <recent name="F:\skola\vysoka\3rocnik\vaii\php_mysql\www\semestralnaPracaVAII\resources\views\gallery" />
+      <recent name="F:\skola\vysoka\3rocnik\vaii\php_mysql\www\semestralnaPracaVAII\app\Http\Controllers" />
+      <recent name="F:\skola\vysoka\3rocnik\vaii\php_mysql\www\semestralnaPracaVAII\app\Http\Controllers\Auth" />
     </key>
   </component>
   <component name="RunManager">
@@ -197,7 +197,7 @@
       <updated>1610731581246</updated>
       <workItem from="1610731582344" duration="5143000" />
       <workItem from="1610789842590" duration="28217000" />
-      <workItem from="1610875110995" duration="4036000" />
+      <workItem from="1610875110995" duration="6241000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1610734424550</created>
@@ -255,7 +255,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610826415379</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="uzivatelom pridane nastavenia">
+      <created>1610879434754</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1610879434754</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -281,17 +288,19 @@
     <MESSAGE value="funkcne pridavanie obrazkov do databazy" />
     <MESSAGE value="editovanie,mazanie obrazkov v galerii" />
     <MESSAGE value="upravenie policies, admin ma pristup k uprave" />
-    <option name="LAST_COMMIT_MESSAGE" value="upravenie policies, admin ma pristup k uprave" />
+    <MESSAGE value="uzivatelom pridane nastavenia" />
+    <option name="LAST_COMMIT_MESSAGE" value="uzivatelom pridane nastavenia" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1610731680130">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1920.-13.1920.1040@0.0.1920.1040" timestamp="1610731680130" />
-    <state x="-1186" y="308" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1610732848376">
-      <screen x="-1920" y="-13" width="1920" height="1040" />
+    <state x="734" y="321" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1610879327107">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1186" y="308" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/-1920.-13.1920.1040@-1920.-13.1920.1040" timestamp="1610732848376" />
+    <state x="734" y="321" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/-1920.-13.1920.1040@0.0.1920.1040" timestamp="1610879327107" />
     <state x="626" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1610803419399">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -312,10 +321,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="619" y="242" key="NewPhpClassDialog/0.0.1920.1040/-1920.-13.1920.1040@0.0.1920.1040" timestamp="1610790857858" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1610824596035">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1610879435571">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.-13.1920.1040@0.0.1920.1040" timestamp="1610824596035" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.-13.1920.1040@0.0.1920.1040" timestamp="1610879435571" />
     <state x="-1061" y="383" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1610792333953">
       <screen x="-1920" y="-13" width="1920" height="1040" />
     </state>

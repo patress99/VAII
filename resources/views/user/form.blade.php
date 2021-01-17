@@ -1,4 +1,5 @@
-<div class="form-group text alert-danger">
+
+<div class="form-group text-danger">
     @foreach($errors->all() as $error)
         {{ $error }}<br>
     @endforeach
