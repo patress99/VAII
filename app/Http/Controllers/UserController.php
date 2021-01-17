@@ -23,7 +23,7 @@ class UserController extends Controller
 
         $grid = new Datagrid($users, $request->get('f', []));
         $grid->setColumn('name', 'Full name')
-            ->setColumn('email', 'Email adress')
+            ->setColumn('contact', 'Email adress')
             ->setActionColumn([
                 'wrapper' => function ($value, $row) {
                 return '<a href="' . route('user.edit', [$row->id]) . '" title="Edit" class="btn btn-sm btn-primary">Edit</a>
@@ -56,7 +56,7 @@ class UserController extends Controller
     {
         $request->validate([
             'name' => 'required',
-            'email' => 'required|email|unique:users,email',
+            'contact' => 'required|contact|unique:users,contact',
             'password' => 'required|min:6|confirmed']);
 
         $user = User::create($request->all());

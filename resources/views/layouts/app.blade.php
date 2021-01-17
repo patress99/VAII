@@ -42,6 +42,9 @@
         @auth
             @if (Auth::user()->name == 'admin')
                 <a class="nav-link m-2 menu-item" href="{{ route('user.index') }}"> {{ __('Users') }}</a>
+                <a class="nav-link m-2 menu-item" href="{{ url("/email") }}"> {{ __('Emaily') }}</a>
+
+
             @endif
         @endauth
 
@@ -70,7 +73,6 @@
             <li class="nav-item">
                 <a href="{{ url("/gallery") }}" class="nav-link m-2 menu-item">Galéria</a>
             </li>
-
 
             <!-- Authentication Links -->
             @guest
