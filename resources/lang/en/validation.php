@@ -1,3 +1,4 @@
+
 <?php
 
 return [
@@ -39,7 +40,7 @@ return [
     'digits_between' => 'The :attribute must be between :min and :max digits.',
     'dimensions' => 'The :attribute has invalid image dimensions.',
     'distinct' => 'The :attribute field has a duplicate value.',
-    'contact' => 'The :attribute must be a valid contact address.',
+    'email' => 'The :attribute must be a valid email address.',
     'ends_with' => 'The :attribute must end with one of the following: :values.',
     'exists' => 'The selected :attribute is invalid.',
     'file' => 'The :attribute must be a file.',
@@ -143,7 +144,7 @@ return [
     |
     | The following language lines are used to swap our attribute placeholder
     | with something more reader friendly such as "E-Mail Address" instead
-    | of "contact". This simply helps us make our message more expressive.
+    | of "email". This simply helps us make our message more expressive.
     |
     */
 

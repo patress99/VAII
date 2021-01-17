@@ -19,17 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="964a6540-0e87-4909-a793-d635324b27ad" name="Default Changelist" comment="doplnenie funkcionality pre uzivatelov">
-      <change afterPath="$PROJECT_DIR$/resources/views/email/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/email/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2c42dcee-d62c-40ad-ae06-0cb9d7fa8883.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2c42dcee-d62c-40ad-ae06-0cb9d7fa8883.xml" afterDir="false" />
+    <list default="true" id="964a6540-0e87-4909-a793-d635324b27ad" name="Default Changelist" comment="pridanie databazy emailov">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/VerificationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/VerificationController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Image.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Image.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/mail.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/mail.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" afterDir="false" />
@@ -40,9 +35,6 @@
       <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/auth/verify.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/verify.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/contact/index.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,11 +187,11 @@
       <recent name="F:\skola\vysoka\3rocnik\vaii\php_mysql\www\semestralnaPracaVAII\public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\skola\vysoka\3rocnik\vaii\php_mysql\www\semestralnaPracaVAII\resources\views" />
       <recent name="F:\skola\vysoka\3rocnik\vaii\php_mysql\www\semestralnaPracaVAII\resources\views\emails" />
       <recent name="F:\skola\vysoka\3rocnik\vaii\php_mysql\www\semestralnaPracaVAII\resources\views\contact" />
       <recent name="F:\skola\vysoka\3rocnik\vaii\php_mysql\www\semestralnaPracaVAII\resources\views\gallery" />
       <recent name="F:\skola\vysoka\3rocnik\vaii\php_mysql\www\semestralnaPracaVAII\app\Http\Controllers" />
-      <recent name="F:\skola\vysoka\3rocnik\vaii\php_mysql\www\semestralnaPracaVAII\app\Http\Controllers\Auth" />
     </key>
   </component>
   <component name="RunManager">
@@ -221,7 +213,7 @@
       <updated>1610731581246</updated>
       <workItem from="1610731582344" duration="5143000" />
       <workItem from="1610789842590" duration="28217000" />
-      <workItem from="1610875110995" duration="28783000" />
+      <workItem from="1610875110995" duration="31649000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1610734424550</created>
@@ -293,7 +285,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610881604706</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="pridanie databazy emailov">
+      <created>1610915874155</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1610915874155</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -321,7 +320,8 @@
     <MESSAGE value="upravenie policies, admin ma pristup k uprave" />
     <MESSAGE value="uzivatelom pridane nastavenia" />
     <MESSAGE value="doplnenie funkcionality pre uzivatelov" />
-    <option name="LAST_COMMIT_MESSAGE" value="doplnenie funkcionality pre uzivatelov" />
+    <MESSAGE value="pridanie databazy emailov" />
+    <option name="LAST_COMMIT_MESSAGE" value="pridanie databazy emailov" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1610731680130">
@@ -357,10 +357,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="619" y="242" key="NewPhpClassDialog/0.0.1920.1040/-1920.-13.1920.1040@0.0.1920.1040" timestamp="1610790857858" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1610915838831">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1610915875197">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.-13.1920.1040@0.0.1920.1040" timestamp="1610915838831" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.-13.1920.1040@0.0.1920.1040" timestamp="1610915875197" />
     <state x="-1061" y="383" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1610792333953">
       <screen x="-1920" y="-13" width="1920" height="1040" />
     </state>
