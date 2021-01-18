@@ -134,4 +134,10 @@ class UserController extends Controller
             'model' => $user
         ]);
     }
+
+    public function getData($id) {
+        $arr['data'] = User::orderBy('id', 'asc')->get();
+        echo json_encode($arr);
+        exit;
+    }
 }

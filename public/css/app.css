@@ -10107,6 +10107,9 @@ body, html {
     height: 100%;
 }
 
+.table {
+    margin-top: 15px;
+}
 
 .midselection {
     margin-top: 30px;

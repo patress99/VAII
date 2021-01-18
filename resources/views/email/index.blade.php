@@ -4,15 +4,15 @@
 
     <div class="container">
 
-        <input type='button' value='Fetch all records' id='fetchAllRecord'>
-        <table id='userTable' class="table table-bordered">
+        <input class="btn btn-primary btn-sm " value='Show records' id='fetchAllRecord'>
+        <table id='userTable' class="table">
             <thead>
             <tr>
-                <th>S.no</th>
+                <th>ID of email</th>
                 <th>Name</th>
                 <th>Email</th>
                 <th>Text</th>
-                <th>ID</th>
+                <th>Delete</th>
             </tr>
             </thead>
             <tbody></tbody>

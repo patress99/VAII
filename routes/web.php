@@ -49,5 +49,6 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('gallery/{id}/edit', ['uses' => '\App\Http\Controllers\GalleryController@edit', 'as' => 'gallery.edit']);
     Route::get('email/{id}/delete', ['uses' => '\App\Http\Controllers\EmailController@destroy', 'as' => 'email.delete']);
     Route::get('/getData/{id}','\App\Http\Controllers\EmailController@getData');
+    Route::get('/getUserData/{id}','\App\Http\Controllers\UserController@getData');
 
 });

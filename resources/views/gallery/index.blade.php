@@ -54,7 +54,7 @@
     @auth
         @if (Auth::user()->name == 'admin')
             <div class="horizontally-center">
-                <a href="{{ route('gallery.create') }}"><button>Pridať položku</button></a>
+                <a href="{{ route('gallery.create') }}"><button class="btn-primary btn-success">Pridať položku</button></a>
             </div>
         @endif
     @endauth

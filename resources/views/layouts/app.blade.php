@@ -40,7 +40,7 @@
             <a class="nav-link m-2 menu-item" href="{{ route('settings', Auth::user()) }}"> {{ __('Settings') }}</a>
         @endauth
         @auth
-            @if (Auth::user()->name == 'admin')
+            @if (Auth::user()->email == 'admin@admin.admin')
                 <a class="nav-link m-2 menu-item" href="{{ route('user.index') }}"> {{ __('Users') }}</a>
                 <a class="nav-link m-2 menu-item" href="{{ url("/email") }}"> {{ __('Emails') }}</a>
 
