@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Aginev\Datagrid\Datagrid;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class UserController extends Controller
 {
@@ -107,7 +108,7 @@ class UserController extends Controller
 
 
         $user->update($request->all());
-        return redirect()->route('home');
+        return back()->with('success','Your settings were changed!');
 
     }
 
@@ -123,9 +124,9 @@ class UserController extends Controller
         return redirect()->route('user.index');
     }
 
-    public function setting($id)
+    public function setting()
     {
-        $user = User::find($id);
+        $user = Auth::user();
         $user->password = '';
         return view('user.edit', [
             'action' => route('user.update', $user->id),

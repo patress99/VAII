@@ -33,7 +33,7 @@ Route::get('/email', function () {
 });
 
 
-
+Route::resource('email', '\App\Http\Controllers\EmailController');
 Route::resource('gallery', \App\Http\Controllers\GalleryController::class);
 
 Auth::routes();
@@ -42,13 +42,12 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::group(['middleware' => ['auth']], function () {
 
-
-    Route::resource('email', '\App\Http\Controllers\EmailController');
     Route::resource('user', UserController::class);
     Route::get('user/{user}/delete',  [UserController::class, 'destroy'])->name('user.delete');
-    Route::get('user/{id}/setting',  [UserController::class, 'setting'])->name('settings');
+    Route::get('user/{user}/setting',  [UserController::class, 'setting'])->name('settings');
     Route::get('gallery/{id}/delete', ['uses' => '\App\Http\Controllers\GalleryController@destroy', 'as' => 'gallery.delete']);
     Route::get('gallery/{id}/edit', ['uses' => '\App\Http\Controllers\GalleryController@edit', 'as' => 'gallery.edit']);
-
+    Route::get('email/{id}/delete', ['uses' => '\App\Http\Controllers\EmailController@destroy', 'as' => 'email.delete']);
+    Route::get('/getData/{id}','\App\Http\Controllers\EmailController@getData');
 
 });

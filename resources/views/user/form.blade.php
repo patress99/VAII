@@ -1,8 +1,17 @@
 
 <div class="form-group text-danger">
-    @foreach($errors->all() as $error)
-        {{ $error }}<br>
-    @endforeach
+    @if(count($errors) > 0)
+        <div class="form-group text-danger">
+            @foreach($errors->all() as $error)
+                {{ $error }}<br>
+            @endforeach
+        </div>
+    @endif
+    @if(\Session::has('success'))
+        <div class="form-group alert-success">
+            <p>{{ \Session::get('success') }}</p>
+        </div>
+    @endif
 </div>
 
 

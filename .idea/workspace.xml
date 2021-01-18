@@ -19,22 +19,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="964a6540-0e87-4909-a793-d635324b27ad" name="Default Changelist" comment="pridanie databazy emailov">
+    <list default="true" id="964a6540-0e87-4909-a793-d635324b27ad" name="Default Changelist" comment="fixnuta registracia">
+      <change afterPath="$PROJECT_DIR$/public/js/jquery.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/VerificationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/VerificationController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/en/passwords.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/passwords.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/en/validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/validation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/verify.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/verify.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/email/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/email/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/user/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,7 +169,7 @@
     <property name="DatabaseDriversLRU" value="mariadb" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ajax" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -213,7 +205,8 @@
       <updated>1610731581246</updated>
       <workItem from="1610731582344" duration="5143000" />
       <workItem from="1610789842590" duration="28217000" />
-      <workItem from="1610875110995" duration="31649000" />
+      <workItem from="1610875110995" duration="31692000" />
+      <workItem from="1610961081272" duration="17146000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1610734424550</created>
@@ -292,7 +285,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610915874155</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="fixnuta registracia">
+      <created>1610918747070</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1610918747070</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -321,18 +321,19 @@
     <MESSAGE value="uzivatelom pridane nastavenia" />
     <MESSAGE value="doplnenie funkcionality pre uzivatelov" />
     <MESSAGE value="pridanie databazy emailov" />
-    <option name="LAST_COMMIT_MESSAGE" value="pridanie databazy emailov" />
+    <MESSAGE value="fixnuta registracia" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixnuta registracia" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1610731680130">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1920.-13.1920.1040@0.0.1920.1040" timestamp="1610731680130" />
-    <state x="734" y="321" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1610891733893">
+    <state x="734" y="321" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1610964331382">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1186" y="308" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/-1920.-13.1920.1040@-1920.-13.1920.1040" timestamp="1610732848376" />
-    <state x="734" y="321" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/-1920.-13.1920.1040@0.0.1920.1040" timestamp="1610891733893" />
+    <state x="734" y="321" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/-1920.-13.1920.1040@0.0.1920.1040" timestamp="1610964331382" />
     <state x="626" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1610803419399">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -341,14 +342,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1920.-13.1920.1040@0.0.1920.1040" timestamp="1610889694137" />
-    <state x="690" y="274" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1610915267652">
+    <state x="690" y="274" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1610961765763">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="274" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/-1920.-13.1920.1040@0.0.1920.1040" timestamp="1610915267652" />
-    <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1610734485286">
+    <state x="690" y="274" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/-1920.-13.1920.1040@0.0.1920.1040" timestamp="1610961765763" />
+    <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1610963002990">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040/-1920.-13.1920.1040@0.0.1920.1040" timestamp="1610734485286" />
+    <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040/-1920.-13.1920.1040@0.0.1920.1040" timestamp="1610963002990" />
     <state width="271" height="457" key="HiddenNamespacesPopup" timestamp="1610731814375">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -357,9 +358,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="619" y="242" key="NewPhpClassDialog/0.0.1920.1040/-1920.-13.1920.1040@0.0.1920.1040" timestamp="1610790857858" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1610915875197">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="-1368" y="239" key="Vcs.Push.Dialog.v2" timestamp="1610918747082">
+      <screen x="-1920" y="-13" width="1920" height="1040" />
     </state>
+    <state x="-1368" y="239" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.-13.1920.1040@-1920.-13.1920.1040" timestamp="1610918747082" />
     <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.-13.1920.1040@0.0.1920.1040" timestamp="1610915875197" />
     <state x="-1061" y="383" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1610792333953">
       <screen x="-1920" y="-13" width="1920" height="1040" />
@@ -375,18 +377,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="734" y="258" width="747" height="525" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1040/-1920.-13.1920.1040@0.0.1920.1040" timestamp="1610882887379" />
-    <state x="777" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1610823264017">
+    <state x="777" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1610977440093">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="777" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/-1920.-13.1920.1040@0.0.1920.1040" timestamp="1610823264017" />
+    <state x="777" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/-1920.-13.1920.1040@0.0.1920.1040" timestamp="1610977440093" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1610888677027">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/-1920.-13.1920.1040@0.0.1920.1040" timestamp="1610888677027" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1610790530533">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1610977673856">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.-13.1920.1040@0.0.1920.1040" timestamp="1610790530533" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.-13.1920.1040@0.0.1920.1040" timestamp="1610977673856" />
     <state x="790" y="310" key="svn.repositoryBrowser" timestamp="1610734491373">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
