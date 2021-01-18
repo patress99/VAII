@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Aginev\Datagrid\Datagrid;
+use http\Env\Response;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use App\Models\Email;
@@ -87,13 +88,14 @@ class EmailController extends Controller
      * Remove the specified resource from storage.
      *
      * @param  int  $id
-     * @return RedirectResponse
+     * @return \Illuminate\Http\JsonResponse
      */
     public function destroy($id)
     {
         $email = Email::find($id);
         $email->delete();
         return back();
+
     }
 
 

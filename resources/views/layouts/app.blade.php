@@ -127,10 +127,8 @@
 
 
 @yield('content')
-
-
-
-
-
 </body>
+
+
+
 </html>
