@@ -39,6 +39,11 @@ class GalleryController extends Controller
      */
     public function store(Request $request)
     {
+        $request->validate([
+            'title' => 'required',
+            'text' => 'required',
+            'filename' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048']);
+
         $item = Image::create($request->all());
         if ($request->hasFile('filename')) {
             $request->file('filename')->store('public/images');
@@ -72,6 +77,7 @@ class GalleryController extends Controller
      */
     public function edit($id)
     {
+
         $image = Image::find($id);
         return view('gallery.edit', [
             'action' => route('gallery.update', $image->id),

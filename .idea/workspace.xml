@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -19,12 +22,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="964a6540-0e87-4909-a793-d635324b27ad" name="Default Changelist" comment="pridanie ajax volania pre userov">
+    <list default="true" id="964a6540-0e87-4909-a793-d635324b27ad" name="Default Changelist" comment="pridane validacie formularov">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/EmailController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/EmailController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/GalleryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/GalleryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/email/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/email/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/email/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/email/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/gallery/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/gallery/form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/gallery/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/gallery/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/user/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -168,7 +175,7 @@
     <property name="DatabaseDriversLRU" value="mariadb" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ajax" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -205,7 +212,8 @@
       <workItem from="1610731582344" duration="5143000" />
       <workItem from="1610789842590" duration="28217000" />
       <workItem from="1610875110995" duration="31692000" />
-      <workItem from="1610961081272" duration="28030000" />
+      <workItem from="1610961081272" duration="28563000" />
+      <workItem from="1611048214362" duration="7338000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1610734424550</created>
@@ -305,7 +313,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610990281265</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="pridane validacie formularov">
+      <created>1611002282203</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1611002282203</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -337,7 +352,8 @@
     <MESSAGE value="fixnuta registracia" />
     <MESSAGE value="pridanie ajax volania pre emaily" />
     <MESSAGE value="pridanie ajax volania pre userov" />
-    <option name="LAST_COMMIT_MESSAGE" value="pridanie ajax volania pre userov" />
+    <MESSAGE value="pridane validacie formularov" />
+    <option name="LAST_COMMIT_MESSAGE" value="pridane validacie formularov" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1610731680130">
@@ -373,11 +389,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="619" y="242" key="NewPhpClassDialog/0.0.1920.1040/-1920.-13.1920.1040@0.0.1920.1040" timestamp="1610790857858" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1610990281726">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1611002282526">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1368" y="239" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.-13.1920.1040@-1920.-13.1920.1040" timestamp="1610918747082" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.-13.1920.1040@0.0.1920.1040" timestamp="1610990281726" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.-13.1920.1040@0.0.1920.1040" timestamp="1611002282526" />
     <state x="-1061" y="383" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1610792333953">
       <screen x="-1920" y="-13" width="1920" height="1040" />
     </state>
@@ -400,10 +416,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/-1920.-13.1920.1040@0.0.1920.1040" timestamp="1610888677027" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1611000975648">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1611056366750">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.-13.1920.1040@0.0.1920.1040" timestamp="1611000975648" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.-13.1920.1040@0.0.1920.1040" timestamp="1611056366750" />
     <state x="790" y="310" key="svn.repositoryBrowser" timestamp="1610734491373">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

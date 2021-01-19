@@ -10139,6 +10139,10 @@ body, html {
     color: red;
 }
 
+.uploadButton {
+    margin-top: 15px;
+}
+
 footer {
 
     width: 100%;

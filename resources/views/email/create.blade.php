@@ -22,11 +22,17 @@
         <form method="post" action="{{url('email')}}">
             @csrf
             <label for="lname">Meno a priezvisko</label>
-            <input type="text" id="lname" name="name" placeholder="Vaše priezvisko.." value="{!! @Auth::user()->name !!}">
-
+            @auth
+                <input type="text" id="lname" name="name" placeholder="Vaše priezvisko.." value="{!! @Auth::user()->name !!}" readonly>
+            @else
+                <input type="text" id="lname" name="name" placeholder="Vaše priezvisko.." value="{!! @Auth::user()->name !!}">
+            @endauth
             <label for="lname">Email</label>
-            <input type="text" id="email" name="email" placeholder="Váš email.." value="{!! @Auth::user()->email !!}">
-
+            @auth
+                <input type="text" id="email" name="email" placeholder="Váš email.." value="{!! @Auth::user()->email !!}" readonly>
+            @else
+                <input type="text" id="email" name="email" placeholder="Váš email.." value="{!! @Auth::user()->email !!}">
+            @endauth
             <label for="country">Krajina</label>
 
             <select id="country" name="country">

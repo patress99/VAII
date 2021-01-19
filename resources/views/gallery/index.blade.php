@@ -18,21 +18,22 @@
 
             <div class="column">
                 <div class="card" style="width: 30rem; height: 35rem;">
-                    <h5 class="card-title"><?=$picture['title']?></h5>
+                    <h5 class="card-title"><b>Popis: </b> <?=$picture['title']?></h5>
                     <?php if($picture['filename'] != null)  {  ?>
                     <div class="pricelist">
                         <img src="{{ asset('storage/images/' . $picture['filename']) }}" class="card-img-top" alt="...">
                     </div>
                     <?php } ?>
-                    <div class="card-body">
-                        <p class="card-title"><?=$picture['text']?></p>
-                        @auth
-                            @if (Auth::user()->name == 'admin')
-                                <a href="{{ route('gallery.edit', $picture['id']) }}" class="btn btn-primary btn-sm" id="right-panel-link">Editovať</a>
-                                <a href="{{ route('gallery.delete', $picture['id']) }}" class="btn btn-danger btn-sm" id="left-panel-link">Zmazať</a>
-                            @endif
-                        @endauth
-                    </div>
+
+                    <p><b>Text:</b></p>
+                    <p><?=$picture['text']?></p>
+                    @auth
+                        @if (Auth::user()->name == 'admin')
+                            <a href="{{ route('gallery.edit', $picture['id']) }}" class="btn btn-primary btn-sm" id="right-panel-link">Editovať</a>
+                            <a href="{{ route('gallery.delete', $picture['id']) }}" class="btn btn-danger btn-sm" id="left-panel-link">Zmazať</a>
+                        @endif
+                    @endauth
+
                 </div>
             </div>
 
@@ -49,8 +50,8 @@
         <?php if ($pocitadlo%2 == 1) { ?> </div>  <?php } ?>
 
 
-
     </div>
+
     @auth
         @if (Auth::user()->name == 'admin')
             <div class="horizontally-center">
@@ -58,5 +59,4 @@
             </div>
         @endif
     @endauth
-
 @endsection

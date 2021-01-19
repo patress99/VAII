@@ -46,7 +46,7 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('user/{user}/delete',  [UserController::class, 'destroy'])->name('user.delete');
     Route::get('user/{user}/setting',  [UserController::class, 'setting'])->name('settings');
     Route::get('gallery/{id}/delete', ['uses' => '\App\Http\Controllers\GalleryController@destroy', 'as' => 'gallery.delete']);
-    Route::get('gallery/{id}/edit', ['uses' => '\App\Http\Controllers\GalleryController@edit', 'as' => 'gallery.edit']);
+    Route::get('gallery/{id}/edit', [\App\Http\Controllers\GalleryController::class, 'edit'])->name('user.edit');
     Route::get('email/{id}/delete', ['uses' => '\App\Http\Controllers\EmailController@destroy', 'as' => 'email.delete']);
     Route::get('/getData/{id}','\App\Http\Controllers\EmailController@getData');
     Route::get('/getUserData/{id}','\App\Http\Controllers\UserController@getData');
